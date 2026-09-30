@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/rootLay"
+    android:background="#084045"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/layBottomBanner"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <!-- Question Part  -->
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lottieTop"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_90sdp"
+                android:padding="0dp"
+                android:scaleType="centerCrop"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/cloud1" />
+            <LinearLayout
+                android:id="@+id/layQuestionPart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/lottieTop"
+              >
+
+        <soup.neumorphism.NeumorphCardView
+            style="@style/Widget.Neumorph.ImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            app:neumorph_shadowColorDark="@color/white"
+            app:neumorph_shadowColorLight="@color/white"
+            tools:layout_editor_absoluteX="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/_15sdp"
+                android:gravity="start|center"
+                >
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/lott"
+                    android:layout_width="@dimen/_58sdp"
+                    android:layout_height="@dimen/_58sdp"
+                    android:padding="0dp"
+                    android:scaleType="centerCrop"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/confuse3" />
+
+                <TextView
+                    android:id="@+id/lblPergunta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2ssp"
+                    android:fontFamily="@font/outfit"
+                    android:gravity="start|center"
+                    android:paddingLeft="@dimen/_3ssp"
+                    android:text="@string/country_name"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14ssp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+
+        </soup.neumorphism.NeumorphCardView>
+    </LinearLayout>
+
+
+
+
+
+    <!-- Question Part  -->
+    <LinearLayout
+        android:id="@+id/layRadioPart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_below="@id/layQuestionPart"
+        >
+
+        <soup.neumorphism.NeumorphCardView
+            style="@style/Widget.Neumorph.ImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            app:neumorph_shadowColorDark="@color/white"
+            app:neumorph_shadowColorLight="@color/white"
+            tools:layout_editor_absoluteX="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_15sdp"
+                >
+
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_20sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    >
+
+
+                    <RadioButton
+                        android:id="@+id/opcaoA"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_58sdp"
+                        android:buttonTint="#FAF8F6"
+                        android:text="@string/radio_1"
+                        android:fontFamily="@font/regular"
+                        android:textColor="#F7FAFA"
+                        android:textSize="@dimen/_13ssp" />
+
+                    <RadioButton
+                        android:id="@+id/opcaoB"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_58sdp"
+                        android:buttonTint="#FAF9F8"
+                        android:text="@string/radio_2"
+                        android:textColor="#FBFBF8"
+                        android:fontFamily="@font/regular"
+                        android:textSize="@dimen/_13ssp" />
+
+                    <RadioButton
+                        android:id="@+id/opcaoC"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_58sdp"
+                        android:buttonTint="#FDFCFB"
+                        android:text="@string/radio_3"
+                        android:textColor="#FBFBF9"
+                        android:fontFamily="@font/regular"
+                        android:textSize="@dimen/_13ssp" />
+
+                    <RadioButton
+                        android:id="@+id/opcaoD"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_58sdp"
+                        android:buttonTint="#DDD7C9"
+                        android:text="@string/radio_4"
+                        android:textColor="#FBFBF8"
+                        android:fontFamily="@font/regular"
+                        android:textSize="@dimen/_13ssp" />
+                </RadioGroup>
+
+
+                <Button
+                    android:id="@+id/confirm"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_18sdp"
+                    android:background="@drawable/btn_orange"
+                    android:clickable="true"
+                    android:fontFamily="@font/teko"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:onClick="loadAnswer"
+                    android:paddingLeft="@dimen/_19sdp"
+                    android:paddingRight="@dimen/_19sdp"
+                    android:text="সাবমিট করুন"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:letterSpacing=".1"
+                    android:textSize="@dimen/_16ssp" />
+
+
+            </LinearLayout>
+
+
+        </soup.neumorphism.NeumorphCardView>
+
+    </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

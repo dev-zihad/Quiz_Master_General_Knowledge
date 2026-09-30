@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_240sdp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/popup_border"
+    android:layout_margin="@dimen/_10sdp"
+    android:layout_gravity="center">
+
+
+    <TextView
+        android:id="@+id/descrptiom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/exo"
+        android:padding="@dimen/_12sdp"
+        android:justificationMode="inter_word"
+        android:gravity="center"
+        android:text="প্রিয় ব্যবহারকারী \nআমরা আপনাদের জন্য নিয়ে এসেছি ৫০০০+ প্রশ্নের ’কুইজ মাষ্টার-সাধারন জ্ঞান’ অ্যাপস্।আমরা আশা করছি,এই অ্যাপসটি আপনাদের সাধারন জ্ঞান বৃদ্ধিতে সহায়ক হবে। আপনার যেকোন প্রশ্ন ও মতামত জানাতে ই-মেইল:thedeveloper.zihad@gmail.com যোগাযোগ করুন। আমাদের সাথে থাকার জন্য আন্তরিক ধন্যবাদ।।"
+        android:textColor="#100D0D"
+        android:textSize="@dimen/_15ssp" />
+
+
+
+</RelativeLayout>

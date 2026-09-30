@@ -1,0 +1,57 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 36
+
+    defaultConfig {
+        applicationId "com.zihadsoftltd.generalknowledge"
+        minSdkVersion 23
+        targetSdkVersion 36
+        versionCode 7
+        versionName "Kordata 7.1.2"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    namespace 'com.zihadsoftltd.generalknowledge'
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.7.1'
+    implementation 'com.google.android.material:material:1.13.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.1'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.3.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.7.0'
+
+    //neumorphism lib
+    implementation 'com.github.fornewid:neumorphism:0.3.2'
+    //Lottie Animation
+    implementation "com.airbnb.android:lottie:6.7.1"
+
+    //admob
+    implementation 'com.google.android.gms:play-services-ads:24.7.0'
+    //Responsive
+    implementation 'com.intuit.sdp:sdp-android:1.1.1'
+    implementation 'com.intuit.ssp:ssp-android:1.1.1'
+
+    //circle image
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    //firebase
+    implementation 'com.google.firebase:firebase-database:22.0.1'
+
+    implementation "androidx.activity:activity:1.11.0"
+
+
+}

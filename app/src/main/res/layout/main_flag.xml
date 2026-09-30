@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_flag"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F6F9FA"
+    tools:context=".MainFlag">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_200sdp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/gk_4" />
+
+            </LinearLayout>
+
+
+    <!--Footer part -->
+
+    <Button
+        android:id="@+id/byEnglish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:background="@drawable/btn_border"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/exo"
+        android:gravity="center"
+        android:paddingVertical="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_100sdp"
+        android:text="শুরু করুন "
+        android:textColor="#ffffff"
+        android:textSize="@dimen/_19sdp" />
+
+    <LinearLayout
+        android:id="@+id/Policy"
+        android:layout_below="@id/byEnglish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:padding="@dimen/_2sdp"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:weightSum="100"
+            android:padding="@dimen/_3sdp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/shareApp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="33.33"
+                android:layout_margin="@dimen/_3sdp"
+                android:background="@drawable/outline_border"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="@dimen/_27sdp"
+                    android:layout_height="@dimen/_27sdp"
+                    android:scaleType="centerCrop"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:src="@drawable/baseline_share_24"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_11ssp"
+                    android:text="শেয়ার"
+                    android:textAlignment="center"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:fontFamily="@font/outfit"
+                    android:textColor="#FDFEFF"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/exitApp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="33.33"
+                android:layout_margin="@dimen/_3sdp"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:background="@drawable/outline_border"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/baseline_exit_to_app_24"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_11ssp"
+                    android:text="বাহির"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/outfit"
+                    android:textColor="#FCFDFD"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/detailsApp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="33.33"
+                android:layout_margin="@dimen/_3sdp"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:background="@drawable/outline_border"
+
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/baseline_details_24"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_11ssp"
+                    android:text="বিস্তারিত"
+                    android:fontFamily="@font/outfit"
+                    android:textAlignment="center"
+                    android:textColor="#FCFDFD"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:id="@+id/Policy2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/_1sdp"
+            android:weightSum="100"
+            android:padding="@dimen/_3sdp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/RateUs"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="33.33"
+                android:layout_margin="@dimen/_3sdp"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:background="@drawable/outline_border"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/baseline_star_rate_24"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_11ssp"
+                    android:text="রেটিং"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/outfit"
+                    android:textColor="#F6F8FA"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/privacyPolicy"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="33.33"
+                android:layout_margin="@dimen/_3sdp"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:background="@drawable/outline_border"
+
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/baseline_security_24"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_11ssp"
+                    android:text="গোপনীয়তা"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/outfit"
+                    android:textColor="#FBFCFD"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/moreApps"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="33.33"
+                android:layout_margin="@dimen/_3sdp"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:background="@drawable/outline_border"
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/baseline_apps_24"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_11ssp"
+                    android:text="আরও অ্যাপস"
+                    android:fontFamily="@font/outfit"
+                    android:textAlignment="center"
+                    android:textColor="#FBFCFD"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

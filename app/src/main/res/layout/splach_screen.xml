@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F9FA"
+    android:id="@+id/splash"
+    tools:context=".SplachScreen">
+
+
+
+
+    <TextView
+        android:id="@+id/app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/appName"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:fontFamily="@font/outfit"
+        android:gravity="center"
+        android:padding="@dimen/_5sdp"
+        android:text="৫০০০+ প্রশ্নের কুইজ"
+        android:textStyle="bold"
+        android:textColor="#FF3D00"
+        android:textSize="@dimen/_21ssp" />
+
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/logo"
+        android:layout_marginBottom="34dp"
+        android:fontFamily="@font/outfit"
+        android:gravity="center"
+        android:padding="@dimen/_5sdp"
+        android:text="@string/app_name"
+        android:textColor="#0EA1E4"
+        android:textSize="@dimen/_17ssp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/logo"
+        android:layout_width="@dimen/_160sdp"
+        android:layout_height="@dimen/_160sdp"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/knowledge_cap" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/_70ssp"
+        android:fontFamily="@font/exo"
+        android:text="Powered By: Zihad Soft Ltd."
+        android:textColor="#C37B1C"
+        android:textSize="@dimen/_11ssp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/_40ssp"
+        android:fontFamily="@font/regular"
+        android:text="Version: Kordata 7.1.2"
+        android:textColor="#0F5B7C"
+        android:textSize="@dimen/_13ssp" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:text=""/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">কুইজ মাষ্টার-সাধারন জ্ঞান</string>
+    <string name="select_language">Select Language</string>
+    <string name="play">Play Now</string>
+    <string name="confirm">Submit</string>
+    <string name="scores">Total Score</string>
+    <!-- Multiple Language -->
+    <string name="continent_name">Subject Name\nEx. General Knowledge</string>
+    <string name="english">English</string>
+    <string name="bangla">বাংলা</string>
+    <string name="hindi">हिंदी</string>
+    <string name="by_flaglist">Flag List </string>
+    <string name="country_name">What is the capital of Bangladesh ?</string>
+    <string name="radio_1">Option A</string>
+    <string name="radio_2">Option B</string>
+    <string name="radio_3">Option C</string>
+    <string name="radio_4">Option D</string>
+    <string name="question_ans">Answer</string>
+
+
+    <!-- Device ID  setTestDeviceIds (search on logcat for device id) -->
+    <string name="device_id">625F6F95FF88C29D7895488F28511C75</string>
+    <!-- Admob AD ON or OFF
+   <string name="show_admob_ad">OFF</string> -->
+
+
+    <!-- REAL ADS
+                android:value="@string/admob_APP_ID"
+        -->
+    <string name="admob_APP_ID">ca-app-pub-4627005629315193~1221603439</string>
+    <string name="admob_INTERSTITIAL_UNIT_ID">ca-app-pub-4627005629315193/6347875403</string>
+    <string name="admob_BANNER_UNIT_ID">ca-app-pub-4627005629315193/6711639816</string>
+
+
+    <!-- TEST ADS
+    <string name="admob_APP_ID">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="admob_INTERSTITIAL_UNIT_ID">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="admob_BANNER_UNIT_ID">ca-app-pub-3940256099942544/6300978111</string>
+    -->
+
+
+</resources>
